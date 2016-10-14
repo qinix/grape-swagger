@@ -4,34 +4,23 @@ sudo: false
 
 matrix:
   include:
-    - rvm: 2.3.1
-      script:
-        - bundle exec danger
-    - rvm: 2.3.1
+    - rvm: 2.4.0-preview3
       env: MODEL_PARSER=grape-swagger-entity
-    - rvm: 2.3.1
+    - rvm: 2.4.0-preview3
       env: MODEL_PARSER=grape-swagger-representable
-    - rvm: 2.3.1
-      env: GRAPE_VERSION=0.14.0
-    - rvm: 2.3.1
-      env: GRAPE_VERSION=0.15.0
-    - rvm: 2.3.1
       env: GRAPE_VERSION=0.16.2
-    - rvm: 2.3.1
+    - rvm: 2.4.0-preview3
       env: GRAPE_VERSION=0.17.0
-    - rvm: 2.3.1
+    - rvm: 2.4.0-preview3
       env: GRAPE_VERSION=0.18.0
-    - rvm: 2.3.1
+    - rvm: 2.4.0-preview3
       env: GRAPE_VERSION=HEAD
-    - rvm: 2.3.0
-    - rvm: 2.2
-    - rvm: 2.1
+    - rvm: 2.3.2
+    - rvm: 2.2.6
     - rvm: ruby-head
-    - rvm: jruby-9.1.2.0
+    - rvm: jruby-9.1.5.0
     - rvm: jruby-head
-    - rvm: rbx-2
   allow_failures:
     - rvm: ruby-head
-    - rvm: jruby-9.1.2.0
+    - rvm: jruby-9.1.5.0
     - rvm: jruby-head
-    - rvm: rbx-2
